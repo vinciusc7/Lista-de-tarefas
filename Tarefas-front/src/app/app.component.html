@@ -1,0 +1,30 @@
+<header>
+  <h1>Lista de Tarefas</h1>
+</header>
+<section>
+  <h2 id="subtitle">ADICIONAR TAREFAS</h2>
+  <form (ngSubmit)="onSubmit()">
+    <input type="text" [(ngModel)]="tarefa" name="tarefa" required>
+    <button type="submit">Adicionar tarefa</button>
+  </form>
+</section>
+<section>
+  <table>
+    <thead>
+      <tr>
+        <th>ID º</th>
+        <th>DESCRIÇÃO DA TAREFA</th>
+        <th>STATUS</th>
+        <th>DELETAR</th>
+      </tr>
+    </thead>
+    <tbody id="tarefas">
+      <tr *ngFor="let tarefa of tarefas">
+        <td id="idTarefa">{{ tarefa.tarefaId }}</td>
+        <td id="descTarefa">{{ tarefa.tarefa }}</td>
+        <td id="statusTarefa"><input id="statusCheck" type="checkbox" [checked]="tarefa.status" (change)="atualizarTarefa(tarefa.tarefaId)"></td>
+        <td><img src="../assets/lixeira.png" alt="Deletar" (click)="deletarTarefa(tarefa.tarefaId)"></td>
+      </tr>
+    </tbody>
+  </table>
+</section>

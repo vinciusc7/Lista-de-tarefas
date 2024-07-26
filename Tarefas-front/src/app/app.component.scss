@@ -1,0 +1,105 @@
+
+header{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  border: solid 1px black;
+  box-shadow: 0px 0px 10px black;
+  margin-bottom: 30px;
+}
+#subtitle{
+  border-bottom: solid black;
+  padding-bottom: 10px;
+}
+section{
+  border: solid 1px black;
+  margin: 0px 20% 0px 20%;
+  justify-content: center;
+  text-align: center;
+}
+
+form{
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+}
+
+input{
+  height: 40px;
+  width: 300px;
+  font-weight: 700;
+  transition: 0.5s;
+}
+
+button{
+  font-weight: 500;
+  width: 200px;
+  height: 45px;
+  transition: 0.5s;
+}
+button:hover{
+  scale: (1.2);
+  background-color: lightgreen;
+  font-weight: 500;
+  box-shadow: 5px 5px 5px black;
+}
+
+table{
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #ffffff;
+  tr {
+    border: solid 1px black;
+    th{
+      background-color: #007bff;
+      color: #ffffff;
+      padding: 8px;
+      width: 20%;
+      border: solid 1px black;
+      height: 40px;
+    }
+    td{
+      height: 20px;
+      border: 1px solid #ddd;
+      padding: 12px;
+    }
+  }
+}
+
+#idTarefa{
+  width: 10%;
+}
+#descTarefa{
+  width: 60%;
+}
+#statusTarefa{
+  width: 10%;
+}
+#statusCheck{
+  cursor: pointer;
+}
+tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Cor de fundo alternada para linhas ímpares */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #ffffff; /* Cor de fundo para linhas pares */
+}
+
+tbody tr:hover {
+  background-color: #e0e0e0; /* Cor de fundo ao passar o mouse sobre a linha */
+}
+
+img{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+img:hover{
+  scale: (1.2);
+  box-shadow: 5px 5px 5px red;
+}

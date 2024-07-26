@@ -1,0 +1,86 @@
+[
+  {
+    "ContainingType": "Tarefas.Controllers.Controller",
+    "Method": "ConnectStatus",
+    "RelativePath": "",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tarefas.Controllers.TarefasController",
+    "Method": "GetTarefasById",
+    "RelativePath": "Tarefas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tarefas.Controllers.TarefasController",
+    "Method": "Finalizartarefa",
+    "RelativePath": "Tarefas/AtualizarTarefa",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tarefas.Controllers.TarefasController",
+    "Method": "CriarTarefas",
+    "RelativePath": "Tarefas/CriarTarefa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tarefa",
+        "Type": "Tarefas.Models.TarefasModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tarefas.Controllers.TarefasController",
+    "Method": "DeletarTarefas",
+    "RelativePath": "Tarefas/DeletarTarefa",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Tarefas.Controllers.TarefasController",
+    "Method": "GetTarefas",
+    "RelativePath": "Tarefas/GetTarefas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]
